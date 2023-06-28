@@ -5,10 +5,10 @@ import RNButton from '../../components/RNButton';
 import COLORS from '../../theme/colors';
 
 function ConnectionInfo(): JSX.Element {
-  const [isConnected, setConnected] = useState<boolean>(false);
+  const [isConnected, setConnected] = useState<boolean>(true);
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener((state: NetInfoState) => {
-      setConnected(state.isConnected ?? false);
+      setConnected(state.isConnected ?? true);
     });
 
     return unsubscribe();
@@ -16,7 +16,7 @@ function ConnectionInfo(): JSX.Element {
 
   function handleRefresh() {
     NetInfo.refresh().then((state: NetInfoState) => {
-      setConnected(state.isConnected ?? false);
+      setConnected(state.isConnected ?? true);
     });
   }
 

@@ -1,11 +1,19 @@
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, Theme} from '@react-navigation/native';
 import React from 'react';
 import AuthStack from './navigation/stack/authStack';
 import HomeStack from './navigation/stack/homeStack';
+import {useColorScheme} from 'react-native';
+import {darkTheme, lightTheme} from './theme/theme';
 
 function Router(): JSX.Element {
   const isLogin: boolean = true;
-  return <NavigationContainer>{handleNavigation(isLogin)}</NavigationContainer>;
+  const isDark = useColorScheme();
+  const selectedTheme: Theme = isDark === 'dark' ? darkTheme : lightTheme;
+  return (
+    <NavigationContainer theme={selectedTheme}>
+      {handleNavigation(isLogin)}
+    </NavigationContainer>
+  );
 }
 
 function handleNavigation(isLogin: boolean): JSX.Element {
