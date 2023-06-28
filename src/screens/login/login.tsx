@@ -4,7 +4,6 @@ import {useAppDispatch} from '../../utils/hooks/reduxHook';
 import {increment} from '../../feature/slices/counterSlice';
 
 function Login(): JSX.Element {
-  console.log('Hello');
   const dispatch = useAppDispatch();
 
   function handlePress() {

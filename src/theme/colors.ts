@@ -1,0 +1,36 @@
+const COLORS = {
+  WHITE: '#FFFFFF',
+  BLACK: '#000000',
+  INPUT_TITLE: '#8E8E8E',
+  BORDER_COLOR: '#B1B1B1',
+  THEME_COLOR: '#F58220',
+  FORGOT_COLOR: '#202B40',
+  RED: '#FF3333',
+  GREEN: 'green',
+  BLUEDARK: '#008CCC',
+  LIGHT_GREY: '#4B4B4B',
+  SHADOW_COLOR: '#000000',
+  GREY_COLOR: 'rgba(26, 34, 51, 0.7)',
+  LIGHT_BLACK: 'rgba(26, 34, 51, 1)',
+  USER_DATAIL_BACK: 'rgba(238, 240, 247, 0.5)',
+  MODAL_BACK_COLOR: 'rgba(0, 0, 0, 0.2)',
+  SELECTED_COLOR: '#eaf3fb',
+  TITLE_COLOR: 'rgba(0, 0, 0, 1)',
+  MODAL_LISTING_BODY_COLOR: 'rgba(0, 0, 0, 0.7)',
+  LIGHTEST_GREY: 'E6E6E6',
+
+  // modalBackGroundColor: 'rgba(26, 26, 26, 0.91)',
+  // PRIMARY_COLOR: '#1a1a1a',
+  // background: '#ffffff',
+  // pColor: '#204894', //  pColor: '#1f2a81',
+  // sColor: '#04AFE6',
+  // lightGrey: '#7B7A7A',
+  // BOTTOM_TAB_UNSELECTED_COLOR: '#989898',
+  // GREY_DARK: "#9C9C9C",
+  // greyLight: '#E5E5E5',
+
+  // White: 'white',
+  // Black: '#000000',
+};
+
+export default COLORS;
